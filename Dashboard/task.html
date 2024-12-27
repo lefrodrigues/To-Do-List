@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Gerenciamento de Residência</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Menu lateral -->
+        <nav class="sidebar">
+            <h2>Residência</h2>
+            <ul>
+                <li><a href="finance.html">Finanças</a></li>
+                <li><a href="task.html">Tarefas</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <header>
+                <h1>Tarefas</h1>
+                <p>Acompanhe suas tarefas aqui.</p>
+            </header>
+
+
+            <!-- Lista de Tarefas -->
+            <section id="tarefas" class="widget">
+                <h2>Lista de Tarefas</h2>
+                <div>
+                    <input type="text" id="taskInput" placeholder="Digite sua tarefa">
+                    <button id="btnAddTask" class="btn">Adicionar Tarefa</button>
+                </div>
+                <ul class="task-list" id="taskList">
+                    <!-- As tarefas serão adicionadas dinamicamente -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="task.js">
+
+    </script>
+</body>
+</html>
